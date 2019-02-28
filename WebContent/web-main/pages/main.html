@@ -1,0 +1,113 @@
+<div ng-show="true">
+
+
+	<div id="myCarousel" class="carousel slide polaroid container"
+		data-ride="carousel"
+		style="margin-left: 35px; margin-right: 35px; margin-top: 10px;">
+		<!-- Indicators -->
+		<ol class="carousel-indicators rounded" style="color: black">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner rounded " role="listbox">
+			<div class="item active">
+				<img src="web-main/img/1.jpg" alt="Chania" width="460" height="345">
+			</div>
+
+			<div class="item">
+				<img src="web-main/img/2.jpg" alt="Chania" width="460" height="345">
+			</div>
+
+			<div class="item">
+				<img src="web-main/img/3.jpg" alt="Flower" width="460" height="345">
+			</div>
+
+			<div class="item">
+				<img src="web-main/img/4.jpg" alt="Flower" width="460" height="345">
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<button class="left carousel-control" href="#myCarousel" role="button"
+			data-slide="prev"
+			style="background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none;">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</button>
+		<button class="right carousel-control" href="#myCarousel"
+			role="button" data-slide="next"
+			style="background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; outline: none;">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</button>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row polaroid container"
+		style="margin-top: 20px; margin-left: 30px; margin-right: 30px; height: 80px; width: auto; text-align: center;">
+		<div class="col-md-12">
+			<h2>CATEGORIES</h2>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row-fluid" style="margin-left: auto; margin-right: auto;">
+		<div class="col-md-6 col-sm-12 polaroid container"
+			style="width: auto; height: auto; margin-top: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<div class="hovereffect">
+				<img class="img-responsive" src="web-main/img/phone1.png" alt=""
+					style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;; width: 500px; height: 300px;">
+				<div class="overlay">
+					<h2>{{nms[0] | uppercase}}</h2>
+					<a class="info" href="#/phones" style="color: blue">SHOP HERE</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 polaroid container"
+			style="width: auto; height: auto; margin-top: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<div class="hovereffect">
+				<img class="img-responsive" src="web-main/img/tab1.jpg" alt=""
+					style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;; width: 500px; height: 300px;">
+				<div class="overlay">
+					<h2>{{nms[1] | uppercase}}</h2>
+					<a class="info" href="#/tablets" style="color: blue">SHOP HERE</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row-fluid" style="margin-left: auto; margin-right: auto;">
+		<div class="col-md-6 col-lg-12 col-sm-12 polaroid container"
+			style="width: auto; height: auto; margin-top: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<div class="hovereffect">
+				<img class="img-responsive" src="web-main/img/hp1.jpg" alt=""
+					style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;; width: 500px; height: 300px;">
+				<div class="overlay">
+					<h2>{{nms[2] | uppercase}}</h2>
+					<a class="info" href="#/accessories" style="color: blue">SHOP HERE</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 polaroid container"
+			style="width: auto; height: auto; margin-top: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;">
+			<div class="hovereffect">
+				<img class="img-responsive" src="web-main/img/lap1.jpg" alt=""
+					style="border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;; width: 500px; height: 300px;">
+				<div class="overlay">
+					<h2>{{nms[3] | uppercase}}</h2>
+					<a class="info" href="#/laptops" style="color: blue">SHOP HERE</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>

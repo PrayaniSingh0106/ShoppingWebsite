@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+	<context:annotation-config></context:annotation-config>
+	<context:component-scan base-package="com.controller,com.service,com.dao" />
+	<mvc:annotation-driven />
+	<mvc:default-servlet-handler />
+
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@INGNRGPILPHP01:1521:ORCLILP" />
+		<property name="username" value="aja140core" />
+		<property name="password" value="aja140core" />
+	</bean>
+	
+	
+	<bean id="laptopDaoImpl" class="com.dao.LaptopDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean> 
+	
+	<bean id="accessoryDaoImpl" class="com.dao.AccessoryDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean> 
+	
+	<bean id="phoneDaoImpl" class="com.dao.PhoneDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean> 
+	
+	<bean id="tabletDaoImpl" class="com.dao.TabletDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean> 
+	
+
+</beans>  
